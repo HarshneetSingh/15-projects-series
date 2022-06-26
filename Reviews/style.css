@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css); */
+::after,
+::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    background-color: rgba(216, 219, 245, 0.253);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.main-section {
+    text-align: center;
+}
+
+.container1 {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 50px;
+}
+.container1::after {
+    display: flex;
+    content: "";
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto auto auto;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(169, 120, 215);
+}
+
+.arti {
+    padding: 30px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 40vw;
+    height: 400px;
+    /* line-height: 0.1rem; */
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 900px){
+    .arti{
+        width: 80vw;height: 420px;
+    }
+ }
+
+.arti:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.img-art {
+    position: relative;
+    width: 125px;
+    z-index: 1;
+    height: 125px;
+   
+}
+
+.img-art::before {
+    position: absolute;
+    top: -3%;
+    z-index: -1;
+    right: -5%;
+    content: "";
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(180, 149, 230);
+    /* transform: translate(25%, 25%); */
+
+}
+
+.img-art::after {
+    top: 0;
+    left: 2%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bolder;
+    content: "\f10e";
+    position: absolute;
+    background-color: rgb(142, 142, 236);
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 50%;
+    transform: translateY(25%);
+    display: grid;
+    place-items: center;
+}
+
+.img-main {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 90px;
+}
+.arti h4{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+.proffesion{
+   color: hsl(205, 78%, 60%); 
+   font-family: "Open Sans", sans-serif;
+   text-transform: uppercase;
+   font-size: 12px;  
+   margin-top: 10px;
+
+  /* transform: translateY(0%); */
+}
+.info{
+    margin-top: 20px;
+
+    color: hsl(207, 17%, 30%); 
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;   
+    line-height: 1.2rem;
+   /* transform: translateY(0%); */
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn-arrow, .randomButton{
+    border: none;
+    background-color: transparent ;
+    margin:  0.5rem;
+    font-size: 1.30rem;
+color: hsl(205, 90%, 76%);
+cursor: pointer;
+}
+.btn-arrow :hover{
+   transition: 0.4s;
+color: hsl(205, 36%, 46%);
+}
+
+.randomButton{
+    font-size: 15px;
+    border: 2px solid rgba(137, 43, 226, 0.658);
+    border-radius: 5px;  
+    padding:5px;
+    background-color: rgba(25, 251, 251, 0.527); 
+     color: hsl(205, 43%, 55%);
+ }
+.randomButton:hover{
+    transition: 0.4s;
+ background-color: rgba(137, 43, 226, 0.658);
+ color: beige;
+ }
+ 
+ 
