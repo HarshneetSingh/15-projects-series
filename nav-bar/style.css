@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position:fixed-top; 
+    
+}
+.nav-links{
+    height: 20px;
+
+}
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(245, 248, 248);
+    box-shadow: 1px 1px 10px #00000059;
+}
+.hello{
+    height: 70px;
+}
+.nav-img img{
+    width: 130px;
+    height: 70px;
+}
+.links , .Contact-links{
+    display: flex;
+}
+.links li{
+    color: rgba(0, 0, 0, 0.758);
+    font-size: 1rem;
+    padding: 1.6rem 1rem;
+    list-style: none;
+    cursor: pointer;
+
+    letter-spacing: 0.1rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+.links li:hover{
+    transition: 1s;
+    
+    color: rgb(152, 72, 227);
+}
+.Contact-links li{
+    letter-spacing: 0.8rem;
+    list-style: none;
+    font-size: larger;
+    padding: 1.6rem 0rem;
+    cursor: pointer;
+
+    color: rgb(140, 140, 207);
+}
+
+.Contact-links li:hover{
+    transition: 1s;
+    color: rgba(152, 77, 222, 0.619);
+}
+.show-links{
+    height: 120rem;
+} 
+
+@media screen and (max-width:800px){
+    nav{
+        justify-content: space-between;
+        overflow: hidden;
+    }
+   
+    .nav-img{
+        
+        margin-left: 2%;
+    }
+    .Contact-links {
+        display: none;
+    }
+    main{
+        height: 100vh;
+        width: 100rem;
+        position: fixed;
+    }
+    .links{
+        flex-direction: column;
+        margin-top: 75px ;
+        position: relative;
+        width: 100%;
+        right: 130px;
+    }
+    .links li{
+      padding: 0.5rem ;
+      text-transform: capitalize;
+      
+    }
+    
+    .links li:hover{
+        transition: 0.8s;
+        /* padding-left: 1.5rem; */
+        background-color: aqua;
+    }
+    .toggle{
+        border: none;
+        font-size: 30px;
+        position:absolute;
+        
+        right: 20px;
+        background-color: transparent;
+        padding: 1.2rem 0;
+        /* margin-bottom: ; */
+    }
+    .toggle:hover{
+        transition: 0.5s;
+        color: rgba(153, 80, 222, 0.653);
+        transform: rotate(90deg);
+    }
+
+}@media screen and (min-width:800px){
+    
+.toggle{
+    display: none;
+}
+}
