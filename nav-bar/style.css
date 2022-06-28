@@ -8,10 +8,8 @@ header{
     position:fixed-top; 
     
 }
-.nav-links{
-    height: 20px;
 
-}
+
 nav{
     
     display: flex;
@@ -21,7 +19,11 @@ nav{
 }
 .hello{
     height: 70px;
+    
 }
+.nav-links{
+    height: 230px;
+} 
 .nav-img img{
     width: 130px;
     height: 70px;
@@ -58,9 +60,6 @@ nav{
     transition: 1s;
     color: rgba(152, 77, 222, 0.619);
 }
-.show-links{
-    height: 120rem;
-} 
 
 @media screen and (max-width:800px){
     nav{

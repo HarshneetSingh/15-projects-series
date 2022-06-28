@@ -1,16 +1,20 @@
 const togglebtn = document.querySelector('.toggle');
-const nav = document.querySelector('.hello');
+const nav = document.querySelector('nav');
 
-// window.addEventListener('DOMContentLoaded', function () {
 
-// })
+
 togglebtn.addEventListener("click", function () {
-    if (nav.classList.height ='70px') {
-        nav.classList.height = '230px';
-    }
-    else if (nav.classList.height = '230px') {
-        nav.classList.height = '70px';
-    }
+  
+    // if(nav.classList.contains('nav-links')){
+    //     nav.classList.remove('nav-links');
+    // }
+    //     else {
 
-    // nav.classList.toggle('nav-links');
+    //     nav.classList.add('nav-links');
+            
+    //     }
+
+    // toggle means if you click a button then it will add the class to the element you want to 
+    // if you click it again it will hide .
+     nav.classList.toggle('nav-links');
 })
