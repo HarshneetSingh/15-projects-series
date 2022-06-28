@@ -1,0 +1,154 @@
+::after,
+::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+}
+
+.main-img {
+    height: 80px;
+    width: 150px;
+    margin-left: 50px;
+}
+
+.open-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin-right: 40px;
+
+}
+
+.open-btn:hover {
+    transition: 0.6s;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.546);
+    transform: scale(1.1)
+}
+
+.show-aside {
+    transform: translate(0%);
+}
+
+/* here i can do this js close open function with setting width also 
+ by setting main aside width 0 and show aside width =100% 
+ so when we click it .it width will go to 100%
+
+ to do this i just have to right overflow hidden in aside 
+
+  */
+aside {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    transition: 1s;
+    /* overflow: hidden; */
+    transform: translate(-100%);
+}
+
+@media screen and (max-width:800px) {
+
+    .show-aside {
+        width: 100%;
+    }
+    
+      
+        
+        .social-icons {
+            list-style: none;
+            position: absolute;
+            left: 35%;
+            bottom: 7%;
+            display: flex;
+        }
+       
+    
+}
+
+
+.side-head {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px white;
+    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425); */
+}
+
+.side-logo {
+    margin-left: 0px;
+    height: 80px;
+    width: 150px;
+}
+
+.close-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin-right: 40px;
+    color: white;
+}
+
+.close-btn:hover {
+    transition: 0.3s;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.525);
+    transform: scale(1.2)
+}
+
+.links {
+    list-style: none;
+    height: 300px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.links li a {
+    background-color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    display: block;
+    padding: 10px 4px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    transition: 0.9s;
+    color: black;
+    background-color: white;
+    padding-left: 1.2rem;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin-top: 40vh;
+    justify-content: center;
+    /* left: 23%; */
+    /* bottom: 7%; */
+    /* display: flex; */
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.social-icons a:hover {
+    color: rgb(145, 120, 120);
+
+}
