@@ -50,11 +50,13 @@
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 900px){
-    .arti{
-        width: 80vw;height: 420px;
+
+@media screen and (max-width: 900px) {
+    .arti {
+        width: 80vw;
+        height: 420px;
     }
- }
+}
 
 .arti:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -66,7 +68,7 @@
     width: 125px;
     z-index: 1;
     height: 125px;
-   
+
 }
 
 .img-art::before {
@@ -107,62 +109,67 @@
     object-fit: cover;
     margin-bottom: 90px;
 }
-.arti h4{
+
+.arti h4 {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     margin-top: 20px;
 
 }
-.proffesion{
-   color: hsl(205, 78%, 60%); 
-   font-family: "Open Sans", sans-serif;
-   text-transform: uppercase;
-   font-size: 12px;  
-   margin-top: 10px;
 
-  /* transform: translateY(0%); */
-}
-.info{
-    margin-top: 20px;
-
-    color: hsl(207, 17%, 30%); 
+.proffesion {
+    color: hsl(205, 78%, 60%);
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    font-size: 12px;   
-    line-height: 1.2rem;
-   /* transform: translateY(0%); */
+    font-size: 12px;
+    margin-top: 10px;
+
+    /* transform: translateY(0%); */
 }
-.button{
+
+.info {
+    margin-top: 20px;
+
+    color: hsl(207, 17%, 30%);
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.2rem;
+    /* transform: translateY(0%); */
+}
+
+.button {
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.btn-arrow, .randomButton{
+.btn-arrow,
+.randomButton {
     border: none;
-    background-color: transparent ;
-    margin:  0.5rem;
+    background-color: transparent;
+    margin: 0.5rem;
     font-size: 1.30rem;
-color: hsl(205, 90%, 76%);
-cursor: pointer;
-}
-.btn-arrow :hover{
-   transition: 0.4s;
-color: hsl(205, 36%, 46%);
+    color: hsl(205, 90%, 76%);
+    cursor: pointer;
 }
 
-.randomButton{
+.btn-arrow :hover {
+    transition: 0.4s;
+    color: hsl(205, 36%, 46%);
+}
+
+.randomButton {
     font-size: 15px;
     border: 2px solid rgba(137, 43, 226, 0.658);
-    border-radius: 5px;  
-    padding:5px;
-    background-color: rgba(25, 251, 251, 0.527); 
-     color: hsl(205, 43%, 55%);
- }
-.randomButton:hover{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(25, 251, 251, 0.527);
+    color: hsl(205, 43%, 55%);
+}
+
+.randomButton:hover {
     transition: 0.4s;
- background-color: rgba(137, 43, 226, 0.658);
- color: beige;
- }
- 
- 
+    background-color: rgba(137, 43, 226, 0.658);
+    color: beige;
+}

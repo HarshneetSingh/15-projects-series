@@ -19,10 +19,12 @@ nav{
 }
 .hello{
     height: 70px;
-    
+    transition: 0.3s;
 }
 .nav-links{
-    height: 230px;
+    height: 215px;
+    transition: 0.3s;
+    
 } 
 .nav-img img{
     width: 130px;
@@ -65,6 +67,7 @@ nav{
     nav{
         justify-content: space-between;
         overflow: hidden;
+        position: relative;
     }
    
     .nav-img{
@@ -80,35 +83,36 @@ nav{
         position: fixed;
     }
     .links{
+      
         flex-direction: column;
         margin-top: 75px ;
-        position: relative;
+        position: absolute;
+        top: 0;
         width: 100%;
-        right: 130px;
+       
     }
     .links li{
       padding: 0.5rem ;
       text-transform: capitalize;
-      
     }
     
     .links li:hover{
-        transition: 0.8s;
-        /* padding-left: 1.5rem; */
+        
+        padding-left: 1.5rem;
         background-color: aqua;
     }
     .toggle{
         border: none;
         font-size: 30px;
         position:absolute;
-        
+         
         right: 20px;
         background-color: transparent;
         padding: 1.2rem 0;
         /* margin-bottom: ; */
     }
     .toggle:hover{
-        transition: 0.5s;
+       
         color: rgba(153, 80, 222, 0.653);
         transform: rotate(90deg);
     }
