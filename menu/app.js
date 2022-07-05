@@ -83,12 +83,44 @@ const menu = [
 
 const headArticle = document.querySelector('.menu-container');
 const headBtn = document.querySelector('.btn-container');
-const Btn = document.querySelectorAll('.btns');
 
+const btnContainer = document.querySelector('.btn-container');
 window.addEventListener('DOMContentLoaded', function () {
     itemLoader(menu);
-
+    buttonLoader(menu);
 })
+
+function buttonLoader(menu) {
+    let btnCategory = menu.reduce((acc, curr) => {
+        if (!acc.includes(curr.category)) {
+            acc.push(curr.category);
+        }
+        return acc;
+    }, ['All']).map((x) => {
+        return `<button class="btns" data-id="${x}">${x}</button>`
+    })
+    btnCategory = btnCategory.join('');
+
+    btnContainer.innerHTML = btnCategory
+    const Btn = btnContainer    .querySelectorAll('.btns');
+    Btn.forEach(button => {
+        button.addEventListener('click', function (e) {
+            let category = e.currentTarget.dataset.id
+            let filterForBtns = menu.filter((item) => {
+                if (category === item.category) {
+                    return item
+                }
+
+            })
+            if (category === 'All') {
+                itemLoader(menu)
+            }
+            else {
+                itemLoader(filterForBtns);
+            }
+        })
+    });
+}
 
 function itemLoader(menu) {
     let displayMenu = menu.map((item) => {
@@ -121,20 +153,4 @@ function itemLoader(menu) {
 
 
 
-Btn.forEach(button => {
-    button.addEventListener('click', function (e) {
-        let category = e.currentTarget.dataset.id
-        let filterForBtns = menu.filter((item) => {
-            if (category === item.category) {
-                return item
-            }
 
-        })
-        if (category === 'All') {
-            itemLoader(menu)
-        }
-        else {
-            itemLoader(filterForBtns);
-        }
-    })
-});

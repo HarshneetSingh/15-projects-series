@@ -105,10 +105,11 @@ body {
 }
 
 .btn-container {
+    text-transform: capitalize;
     margin: 30px auto auto auto;
     display: flex;
-    justify-content: space-evenly;
-    width: 430px;
+    justify-content: space-around;
+    width: 40%;
 }
 
 .btns {
@@ -131,8 +132,23 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 
 }
+@media screen and (max-width:1000px) {
+    .btn-container{
+        width: 80%;
+    }
+    .left img {
 
+
+        width: 150px;
+        height: 170px;
+        border-radius: 10px;
+        border: 4px solid rgba(204, 154, 62, 0.909);
+    }
+}
 @media screen and (max-width:800px) {
+    .btn-container{
+        width: 100%;
+    }
     .menu{
         width: 100%;
     }
@@ -156,15 +172,5 @@ body {
     .right {
         flex-basis: 40%;
     
-    }
-}
-@media screen and (max-width:1000px) {
-    .left img {
-
-
-        width: 150px;
-        height: 170px;
-        border-radius: 10px;
-        border: 4px solid rgba(204, 154, 62, 0.909);
     }
 }
