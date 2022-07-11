@@ -74,3 +74,20 @@ header::after{
 .slide {
     left: 48%;
 }
+
+.preloader{
+    position: fixed;
+    display: grid;
+    top: 0;
+    bottom: 0;
+    left: 0;
+   background: white;
+    right: 0;z-index: 999;
+    visibility: visible;
+    place-items: center;
+    transition: 0.5s;
+}
+.loader-hidden{
+    visibility: hidden;
+     z-index: -999;
+}
