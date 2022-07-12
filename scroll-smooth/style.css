@@ -58,19 +58,19 @@ transition: 0.4s;
 }
 .links li a {
     text-decoration: none;
-
-}
-.links li {
-    color: rgba(0, 0, 0, 0.758);
+  color: rgba(0, 0, 0, 0.758);
     font-size: 1rem;
-    padding: 1.7rem 1rem;
-    list-style: none;
+    
+    font-weight: bold;
     cursor: pointer;
     letter-spacing: 0.1rem;
     font-family: 'Fira Sans', sans-serif;
 }
+.links li {padding: 1.7rem 1rem;
+  list-style: none;
+}
 
-.links li:hover {
+.links li a:hover {
     transition: 1s;
 
     color: rgb(152, 72, 227);
@@ -123,6 +123,7 @@ transition: 0.4s;
     }
 
     .links li:hover {
+    transition: 0.5s;
 
         padding-left: 1.5rem;
         background-color: aqua;
