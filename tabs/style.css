@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400&display=swap');
+
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+.tab {
+    padding-top: 30px;
+    background-color: rgba(35, 106, 106, 0.158);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.tab-info {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.tab-info h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: rgba(40, 35, 35, 0.886);
+    font-size: 3rem;
+}
+
+.tab-info p {    line-height: 30px;
+    color: rgb(70, 133, 133);
+
+}
+.tab-article {
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    
+    margin: 2rem;
+    column-gap: 2rem;
+}
+
+.tab-article img{
+    width: 40vw;
+
+}
+#imgg{
+    
+    border-radius: 8px;
+    height: 330px;
+     
+} 
+
+.info-btns {width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    background-color: rgba(128, 128, 128, 0.139);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.btns {
+    
+    border: none;
+    background: transparent;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+
+}
+
+.btns:hover {
+    
+
+    transition: 0.3s;
+    background-color: rgb(156, 245, 245);
+    color: rgb(123, 123, 225);
+}
+
+.btns:nth-child(1){ border-top-left-radius: 5px;
+    }
+    
+    .btns:nth-child(1){ 
+    border-top-right-radius: 5px;}
+.info-content { 
+    width: 100%;
+    height: 280px;
+    background-color: white;
+    overflow: scroll;
+}
+
+.content {display: none;
+    padding: 1.5rem 1.5rem;
+   
+}
+.active-content{
+    display: block;
+}
+.content h4 {
+    padding: 1rem 0;
+}
+
+.content p {
+    line-height: 25px;
+    color: grey;
+}
+ @media screen and (max-width:800px) {
+    .tab-info {
+        width: 70%;
+        
+        line-height: 20px;
+    }
+    .tab-article{
+        
+        grid-template-columns: auto ;
+            
+           
+            
+        }
+
+    .tab{
+        flex-direction: column;
+        height: auto;
+    }
+    .btns {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        padding: 0.8rem 1rem;
+    
+    }
+    .info-btns{
+        width: 100%;
+    }
+    #imgg{
+
+        width: 80vw;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+    .article-info{
+        width: 80vw;
+    }
+  
+       #imgg{
+        width: 80vw;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+}
