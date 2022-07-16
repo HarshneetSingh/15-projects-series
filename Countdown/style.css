@@ -1,0 +1,91 @@
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+
+.counter-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.Counter{
+    margin-bottom: 50px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.counter-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    width: 80%;
+
+}
+
+.img img{
+    width: 500px;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.container-content{
+    padding-top: 40px;
+}
+.container-content h4{
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    color: grey;
+    text-transform: uppercase;
+}
+.container-content h5{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: rgb(127, 190, 190);
+    text-transform: capitalize;
+}
+.container-content p{
+    color: rgba(0, 0, 0, 0.402);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.timer-container{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+}
+.timer-container h6{
+    font-size: 2rem;
+    margin-top: 8px;
+}
+.date,
+.hour,
+.mins,
+.secs{
+    width: 60px;
+    height: 70px;background-color: rgb(19, 31, 62);
+} 
+.expired {
+    font-size: 2rem;
+}
+@media screen and (max-width:800px) {
+    .counter-container{
+        grid-template-columns: auto;
+    }
+    .img img{
+        width: 80vw;
+        height: 30vh;
+    }
+}
