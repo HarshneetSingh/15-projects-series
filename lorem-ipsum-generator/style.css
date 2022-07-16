@@ -1,0 +1,72 @@
+*{
+    margin: 0;padding: 0;
+    
+    box-sizing: border-box;
+}
+
+.lorem-alternate{
+    background-color: rgba(150, 224, 224, 0.603);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.lorem-alternate h2{
+    font-size: 2.5rem;
+    margin: 30px;
+
+}
+.lorem-form label{
+    font-size: 2rem;
+
+}
+.input{
+    border: 2px solid rgba(0, 0, 255, 0.189);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 4px;
+    border-radius: 4px;
+}
+.btn{
+   
+
+    border: 2px solid rgba(250, 128, 114, 0.731);
+    border-radius: 4px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: 0.2rem ;
+}
+.btn:hover{
+    color: white;
+    transition: 0.5s;
+    background-color: rgba(250, 128, 114, 0.731); 
+}
+.lorem-text{
+    background-color: white;
+    width: 500px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 1.5rem;
+    height: auto;
+
+    font-size: 1.2rem;
+}
+.lorem-text p{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:800px) {
+  
+    .lorem-form{
+        width: 80%;
+    }
+  
+    .lorem-alternate h2{
+        font-size :2rem; 
+    }
+    .lorem-text{
+        width: 80%;
+    }
+}
