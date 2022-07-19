@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.section-grocery {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(5, 159, 255, 0.032);
+    display: grid;
+    place-items: center;
+
+}
+
+.grocery-container {
+    padding: 2rem;
+    margin-bottom: 150px;
+    margin-top: 200px;
+    width: 550px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.285);
+}
+
+.alert {
+    padding: 4px;
+    height: 1.25rem;
+    font-size: 10px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.alert-success {
+    background-color: rgba(48, 226, 48, 0.493);
+    color: rgb(65, 4, 4);
+}
+
+.alert-danger {
+    color: rgb(185, 11, 11);
+    background-color: rgba(96, 36, 36, 0.205);
+}
+
+.container-form h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    margin-bottom: 40px;
+
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.form-input {
+    border: none;
+    background-color: rgba(133, 189, 235, 0.11);
+    border-top-left-radius: 7px;
+    padding-left: 0.5rem;
+    border-bottom-left-radius: 7px;
+}
+
+
+
+.submit {
+    text-transform: capitalize;
+    font-size: 1rem;
+    border: none;
+    border-top-right-radius: 7px;
+    padding: 0.5rem;
+    border-bottom-right-radius: 7px;
+    background-color: rgba(192, 140, 241, 0.477);
+    color: rgb(0, 0, 0);
+}
+
+.submit:hover {
+    transition: 0.5s;
+    background-color: rgb(192, 140, 241);
+    color: white;
+}
+
+.item-article {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 0.2rem 0.7rem;
+    margin-top: 15px;
+
+    text-transform: capitalize;
+}
+
+.item-article:hover {
+    transition: 0.5s;
+    background-color: rgba(192, 140, 241, 0.137);
+
+}
+
+.item-settings button {
+    background-color: transparent;
+    border: none;
+}
+
+.item-settings button:nth-child(1) {
+    font-size: 12px;
+    color: rgb(56, 196, 54);
+    margin-right: 5px;
+}
+
+.item-settings button:nth-child(1):hover {
+    transition: 0.4s;
+    color: chocolate;
+}
+
+.item-settings button:nth-child(2):hover {
+    transition: 0.4s;
+    color: rgb(127, 78, 43);
+}
+
+.clear-item {
+    padding: 4px;
+    font-size: 10px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border: pink;
+    margin-top: 15px;
+    visibility: hidden;
+}
+.clear-visible{
+    visibility: visible;
+}
+.clear-item:hover {
+    transition: 0.8s;
+    color: rgb(185, 11, 11);
+    background-color: rgba(96, 36, 36, 0.205);
+}
+
+@media screen and (max-width:500px) {
+    .grocery-container {
+        width: 80vw;
+    }
+}
