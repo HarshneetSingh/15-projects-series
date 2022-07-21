@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+.slider-container{
+    width: 80%;
+    overflow: hidden;
+    margin: 50px auto auto auto;
+    position: relative;
+    height: 340px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.253);
+    border: 5px solid yellowgreen ;
+}
+.slides{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;  
+    place-items: center;
+    transition: all ease-in-out .5s;
+}
+.slides img{
+    border-radius: 4px;
+    width: 100%;
+    object-fit: cover;
+height: 330px;
+}
+.slides h1{
+    position: absolute;
+    font-size: 3rem ;
+    color: wheat;
+}
+.slider-btn{
+text-align: center;
+margin-top: 50px;
+}
+.slider-btn button:nth-child(1){
+    border: 2px solid yellowgreen;
+    background-color: white;
+    color: yellowgreen;
+    padding: 0.3rem 0.6rem;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.slider-btn button:nth-child(1):hover{
+    color: white;
+background-color: yellowgreen;
+transition: 0.5s;
+
+}
+
+.slider-btn button:nth-child(2){
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: 2px solid rgb(255, 3, 3);
+    background-color: white;
+    color: yellowgreen;
+    padding: 0.3rem 0.6rem;
+}
+.slider-btn button:nth-child(2):hover{
+transition: 0.5s;
+ 
+    color: white;
+    background-color: rgb(255, 3, 3);
+}
+/* making css logic in js */
+/* .slides:nth-child(1){
+left: 0%;
+}
+.slides:nth-child(2){
+    left: 100%;
+}
+.slides:nth-child(3){
+    left: 200%;
+    
+}
+.slides:nth-child(4){
+    left: 300%;
+    
+} */
+/* .slides{
+    transform: translateX(-300%);
+} */
